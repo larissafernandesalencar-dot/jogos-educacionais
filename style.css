@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', cursive, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #2c3e50;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 10px;
+    color: #1e5128;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 0px #fff;
+}
+
+main {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    border: 4px solid #4ebd69;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: #eef9f0;
+    padding: 10px 15px;
+    border-radius: 12px;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ff9f43;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+    box-shadow: 0 4px 0 #ee5253;
+}
+
+.btn:hover {
+    background-color: #ff793f;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.btn-option {
+    background-color: #54a0ff;
+    box-shadow: 0 4px 0 #2e86de;
+}
+
+.btn-option:hover {
+    background-color: #2e86de;
+}
+
+.correct {
+    background-color: #1dd1a1 !important;
+    box-shadow: 0 4px 0 #10ac84 !important;
+}
+
+.wrong {
+    background-color: #ff6b6b !important;
+    box-shadow: 0 4px 0 #ee5253 !important;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #2d3436;
+    opacity: 0.8;
+}
